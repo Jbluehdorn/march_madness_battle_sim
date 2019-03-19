@@ -58,7 +58,7 @@ function simulate_fight(teams) {
 
   console.log('==FINAL==')
   console.log(`${victor.name} won the fight after ${rounds} rounds!`)
-  console.log(`There were/was ${count_healthy(victor)} ${victor.mascot}(s) remaining`)
+  console.log(`There were/was ${count_healthy(victor)} out of ${victor.teamMembers.length} ${victor.mascot}(s) remaining`)
 }
 
 function sort_teams(teams) {
@@ -77,6 +77,9 @@ function attack(attackingTeam, defendingTeam) {
       let atkRoll = dice.roll(20) + (attacker.atk / 3)
       let defRoll = dice.roll(20) + (defendingTeam.def / 3)
 
+      if(!attackingTeam.ranged && defendingTeam.airborne)
+        atkRoll *= .4
+
       if(atkRoll > defRoll) {
         let dmg = dice.roll(6) + attacker.str
         let healthyId = pick_random_healthy_team_member_id(defendingTeam.teamMembers)
@@ -91,7 +94,10 @@ function attack(attackingTeam, defendingTeam) {
           target.hp = 0
 
         console.log(`${attackingTeam.mascot} #${attacker.id + 1} attacks ${defendingTeam.mascot} #${target.id + 1} and inflicts ${dmg} points of damage!`)
-        console.log(`${defendingTeam.mascot} #${target.id + 1} has ${target.hp} hp remaining.`)
+        if(target.hp == 0)
+          console.log(`${defendingTeam.mascot} #${target.id + 1} has died.`)
+        else
+          console.log(`${defendingTeam.mascot} #${target.id + 1} has ${target.hp} hp remaining.`)
       } else {
         console.log(`${attackingTeam.mascot} #${attacker.id + 1} missed!`)
       }
