@@ -1,0 +1,22 @@
+[
+  {
+    "name": "LSU",
+    "mascot": "Tiger",
+    "seed": 3,
+    "atk": 8,
+    "str": 9,
+    "def": 5,
+    "hp": 7,
+    "speed": 8
+  },
+  {
+    "name": "Yale",
+    "mascot": "Bulldog",
+    "seed": 14,
+    "atk": 4,
+    "str": 6,
+    "def": 6,
+    "hp": 9,
+    "speed": 3
+  }
+]
