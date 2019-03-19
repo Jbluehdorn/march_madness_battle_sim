@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "readline-sync": "^1.4.9"
   },
   "devDependencies": {
     "esm": "^3.2.18"

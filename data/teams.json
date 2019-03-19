@@ -6,7 +6,7 @@
     "atk": 8,
     "str": 9,
     "def": 5,
-    "hp": 7,
+    "health": 5,
     "speed": 8
   },
   {
@@ -16,7 +16,47 @@
     "atk": 4,
     "str": 6,
     "def": 6,
-    "hp": 9,
+    "health": 9,
     "speed": 3
+  },
+  {
+    "name": "VCU",
+    "mascot": "Ram",
+    "seed": 8,
+    "atk": 3,
+    "str": 8,
+    "def": 5,
+    "health": 5,
+    "speed": 9
+  },
+  {
+    "name": "UCF",
+    "mascot": "Golden Knight",
+    "seed": 9,
+    "atk": 7,
+    "str": 8,
+    "def": 10,
+    "health": 5,
+    "speed": 4
+  },
+  {
+    "name": "Ole Miss",
+    "mascot": "Rebel",
+    "seed": 8,
+    "atk": 6,
+    "str": 10,
+    "def": 5,
+    "health": 5,
+    "speed": 6
+  },
+  {
+    "name": "Oklahoma",
+    "mascot": "Sooner",
+    "seed": 9,
+    "atk": 2,
+    "str": 10,
+    "def": 6,
+    "health": 10,
+    "speed": 8
   }
 ]
