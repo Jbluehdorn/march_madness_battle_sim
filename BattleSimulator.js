@@ -78,7 +78,7 @@ function attack(attackingTeam, defendingTeam) {
       let defRoll = dice.roll(20) + (defendingTeam.def / 3)
 
       if(!attackingTeam.ranged && defendingTeam.airborne)
-        atkRoll *= .4
+        atkRoll *= .75
 
       if(atkRoll > defRoll) {
         let dmg = dice.roll(6) + attacker.str
