@@ -106,6 +106,13 @@ function attack(attackingTeam, defendingTeam) {
 }
 
 function pick_random_healthy_team_member_id(teamMembers) {
+  let critical = _.filter(teamMembers, member => {
+    return member.hp <= member.maxHp * .25 && member.hp > 0
+  })
+
+  if(critical.length) 
+    return _.sample(critical).id
+
   return _.chain(teamMembers)
             .filter(member => {
               return member.hp > 0
@@ -166,6 +173,7 @@ function create_new_team_member(team) {
     atk: team.atk,
     str: team.str,
     def: team.def,
-    hp: team.health * 5
+    hp: team.health * 5,
+    maxHp: team.health * 5
   }
 }
