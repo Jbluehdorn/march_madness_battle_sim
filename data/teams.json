@@ -18,7 +18,7 @@
     "atk": 4,
     "str": 6,
     "def": 6,
-    "health": 9,
+    "health": 4,
     "speed": 3,
     "airborne": false,
     "ranged": false
@@ -114,7 +114,7 @@
     "atk": 4,
     "str": 6,
     "def": 6,
-    "health": 9,
+    "health": 4,
     "speed": 3,
     "airborne": false,
     "ranged": false
@@ -246,7 +246,7 @@
     "atk": 4,
     "str": 6,
     "def": 6,
-    "health": 9,
+    "health": 4,
     "speed": 3,
     "airborne": false,
     "ranged": false
@@ -264,7 +264,7 @@
     "ranged": false
   },
   {
-    "name": "Praire View",
+    "name": "Prairie View",
     "mascot": "Panther",
     "seed": 16, 
     "atk": 8,
@@ -474,7 +474,7 @@
     "atk": 4,
     "str": 6,
     "def": 6,
-    "health": 9,
+    "health": 4,
     "speed": 3,
     "airborne": false,
     "ranged": false
